@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- LifeCycle -->
+  <servlet>
+  	<servlet-name>add</servlet-name>
+  	<servlet-class>com.hariom.Life</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>add</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Calculator -->
+  <servlet>
+    <servlet-name>calculate</servlet-name>
+    <servlet-class>com.hariom.Calculator</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>calculate</servlet-name>
+    <url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Login -->
+   <servlet>
+    <servlet-name>auth</servlet-name>
+    <servlet-class>com.hariom.AuthLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>display</servlet-name>
+    <servlet-class>com.hariom.DisplayUser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>display</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>auth</servlet-name>
+    <url-pattern>/auth</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Current Date -->
+  <servlet>
+    <servlet-name>Date</servlet-name>
+    <servlet-class>com.hariom.Current_Date</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Date</servlet-name>
+    <url-pattern>/date</url-pattern>
+  </servlet-mapping>
+</web-app>
