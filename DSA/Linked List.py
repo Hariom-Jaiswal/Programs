@@ -22,8 +22,8 @@ class LinkedList:
         if self.head == None:
             print("Error: Empty List")
             
-        elif self.head.next != None:
-            self.head.next = None
+        elif self.head.next is None:
+            self.head = None
 
         else:
             self.iterateNode = self.head
