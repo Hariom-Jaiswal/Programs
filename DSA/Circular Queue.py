@@ -46,32 +46,22 @@ class CircularQ:
         print("Tail Position: ", self.tail)
         
 
-##a = CircularQ(5)
-##a.isFull()
-##False
-##a.Length()
-##0
-##a.Dequeue()
-##'Error: Queue is Empty'
-##a.Enqueue(5)
-##a.Enqueue(4)
-##a.Enqueue(3)
-##a.Enqueue(2)
-##a.Enqueue(1)
-##a.Enqueue(0)
-##'Error: Queue is Full'
-##a.Display()
-##Queue:  [5, 4, 3, 2, 1]
-##Head Position:  0
-##Tail Position:  0
-##a.Dequeue()
-##a.Display()
-##Queue:  [None, 4, 3, 2, 1]
-##Head Position:  1
-##Tail Position:  0
-##a.Dequeue()
-##a.Display()
-##Queue:  [None, None, 3, 2, 1]
-##Head Position:  2
-##Tail Position:  0
 
+#Output
+a = CircularQ(5)
+a.isFull()
+a.Length()
+a.Dequeue()
+a.Enqueue(5)
+a.Enqueue(4)
+a.Enqueue(3)
+a.Enqueue(2)
+a.Enqueue(1)
+a.Enqueue(0)
+a.Display()
+
+a.Dequeue()
+a.Display()
+
+a.Dequeue()
+a.Display()
